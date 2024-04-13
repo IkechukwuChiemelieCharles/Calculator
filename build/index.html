@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container w-64 h-full bg-black mx-auto my-14 px-5 py-5">
+      <header class="flex items-center justify-between">
+        <div class="logo text-white text-3xl font-bold">calc</div>
+        <p class="text-white font-medium text-xs mt-3 ml-5">THEME</p>
+        <div class="grid items-center justify-center">
+          <u id="num" class="text-white flex list-none ml-1 gap-3 text-sm">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </u>
+          <div id="palette" class="w-14 h-4 bg-white rounded-full relative">
+            <button
+              type="btn"
+              id="firstToggle"
+              class="w-3 h-2 bg-slate-700 rounded-full absolute top-1 left-1"
+            ></button>
+            <button
+              type="btn"
+              id="secondToggle"
+              class="hidden w-3 h-2 bg-slate-700 rounded-full absolute top-1 left-5"
+            ></button>
+            <button
+              type="btn"
+              id="thirdToggle"
+              class="hidden w-3 h-2 bg-slate-700 rounded-full absolute top-1 left-9"
+            ></button>
+          </div>
+        </div>
+      </header>
+      <form action="" class="calculator" name="calc">
+        <input
+          type="text"
+          id="screen"
+          class="value w-52 h-16 rounded-lg my-5 text-white"
+          name="txt"
+          readonly=""
+        />
+
+        <div id="keyboard" class="w-52 h-72 rounded-lg grid grid-cols-4 gap-1">
+          <div
+            id="btn"
+            class="w-10 h-10 bg-white rounded-md flex items-center justify-center text-xl font-bold shadow-xl my-4 ml-2 hover:bg-red-700"
+            onclick="document.calc.txt.value +='7'"
+          >
+            7
+          </div>
+          <div
+            id="btn"
+            class="w-10 h-10 bg-white rounded-md flex items-center justify-center text-xl font-bold shadow-xl my-4 ml-2"
+            onclick="document.calc.txt.value +='8'"
+          >
+            8
+          </div>
+          <div
+            id="btn"
+            class="w-10 h-10 bg-white rounded-md flex items-center justify-center text-xl font-bold shadow-xl my-4 ml-1"
+            onclick="document.calc.txt.value +='9'"
+          >
+            9
+          </div>
+          <div
+            id="btn"
+            class="w-10 h-10 bg-white rounded-md flex items-center justify-center text-xl font-bold shadow-xl my-4"
+            onclick="document.calc.txt.value =''"
+          >
+            Del
+          </div>
+          <div
+            id="btn"
+            class="w-10 h-10 bg-white rounded-md flex items-center justify-center text-xl font-bold shadow-xl my-4 ml-2 -mt-2"
+            onclick="document.calc.txt.value +='4'"
+          >
+            4
+          </div>
+          <div
+            id="btn"
+            class="w-10 h-10 bg-white rounded-md flex items-center justify-center text-xl font-bold shadow-xl my-4 ml-2 -mt-2"
+            onclick="document.calc.txt.value +='5'"
+          >
+            5
+          </div>
+          <div
+            id="btn"
+            class="w-10 h-10 bg-white rounded-md flex items-center justify-center text-xl font-bold shadow-xl my-4 ml-1 -mt-2"
+            onclick="document.calc.txt.value +='6'"
+          >
+            6
+          </div>
+          <div
+            id="btn"
+            class="w-10 h-10 bg-white rounded-md flex items-center justify-center text-xl font-bold shadow-xl my-4 -mt-2"
+            onclick="document.calc.txt.value +='+'"
+          >
+            +
+          </div>
+          <div
+            id="btn"
+            class="w-10 h-10 bg-white rounded-md flex items-center justify-center text-xl font-bold shadow-xl my-4 ml-2 -mt-2"
+            onclick="document.calc.txt.value +='1'"
+          >
+            1
+          </div>
+          <div
+            id="btn"
+            class="w-10 h-10 bg-white rounded-md flex items-center justify-center text-xl font-bold shadow-xl my-4 ml-2 -mt-2"
+            onclick="document.calc.txt.value +='2'"
+          >
+            2
+          </div>
+          <div
+            id="btn"
+            class="w-10 h-10 bg-white rounded-md flex items-center justify-center text-xl font-bold shadow-xl my-4 ml-1 -mt-2"
+            onclick="document.calc.txt.value +='3'"
+          >
+            3
+          </div>
+          <div
+            id="btn"
+            class="w-10 h-10 bg-white rounded-md flex items-center justify-center text-xl font-bold shadow-xl my-4 -mt-2"
+            onclick="document.calc.txt.value +='-'"
+          >
+            -
+          </div>
+          <div
+            id="btn"
+            class="w-10 h-10 bg-white rounded-md flex items-center justify-center text-xl font-bold shadow-xl my-4 ml-2 -mt-2"
+            onclick="document.calc.txt.value +='.'"
+          >
+            .
+          </div>
+          <div
+            id="btn"
+            class="w-10 h-10 bg-white rounded-md flex items-center justify-center text-xl font-bold shadow-xl my-4 ml-2 -mt-2"
+            onclick="document.calc.txt.value +='0'"
+          >
+            0
+          </div>
+          <div
+            id="btn"
+            class="w-10 h-10 bg-white rounded-md flex items-center justify-center text-xl font-bold shadow-xl my-4 ml-1 -mt-2"
+            onclick="document.calc.txt.value +='/'"
+          >
+            /
+          </div>
+          <div
+            id="btn"
+            class="w-10 h-10 bg-white rounded-md flex items-center justify-center text-xl font-bold shadow-xl my-4 -mt-2"
+            onclick="document.calc.txt.value +='x'"
+          >
+            x
+          </div>
+          <div
+            id="btn"
+            class="w-24 h-10 bg-white rounded-md flex items-center justify-center text-xl font-bold shadow-xl my-4 ml-2 -mt-2 col-span-2"
+            onclick="document.calc.txt.value =''"
+          >
+            Reset
+          </div>
+          <div
+            id="btn"
+            class="w-20 h-10 bg-white rounded-md flex items-center justify-center text-xl font-bold shadow-xl my-4 ml-2 -mt-2 col-span-2"
+            onclick="document.calc.txt.value=eval(calc.txt.value)"
+          >
+            =
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
