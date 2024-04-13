@@ -9,7 +9,13 @@
   background-color: hsl(222, 26%, 31%);
 }
 #firstToggle {
-  background-color: hsl(29, 74%, 28%);
+  background-color: hsl(6, 63%, 50%);
+}
+#secondToggle {
+  background-color: hsl(6, 63%, 50%);
+}
+#thirdToggle {
+  background-color: hsl(6, 63%, 50%);
 }
 #screen {
   background-color: hsl(224, 36%, 15%);
@@ -19,4 +25,29 @@
 }
 #btn {
   box-shadow: 0 5px 5px hsl(185, 58%, 25%);
+}
+.reset {
+  background-color: hsl(222, 26%, 31%);
+}
+.del {
+  background-color: hsl(222, 26%, 31%);
+}
+.equal {
+  background-color: hsl(6, 63%, 50%);
+}
+#bgColorToggler {
+  background-color: hsl(6, 63%, 50%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  left: 20px; /* Initial position */
+  transition:;
+  /* left 0.5s ease,
+    background-color 0.5s; */
+  /* left: 20px; Initial position */
+  /* transition: left 0.5s ease; Transition property */
+}
+
+#bgColorToggler:hover {
+  background-color: darkblue;
 }
